@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>MVC</title>
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR1iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+</head>
+
+<body class="container p-4">
+    <h1 class="display-4 text-center title mt-4">Personas</h1>
+    <div class="row">
+        <div class="col-md-4 offset-md-4 my-auto">
+            <div class="card">
+                <div class="card-body">
+                    <ul class="list-group">
+                        {% for personass in list %}
+                        <li class="list-group-item">
+                            <span class="">Id: {{personass[0]}}</span>
+                            <span class="">Nombres: {{personass[0]}}</span>
+                            <span class="">Apellidos: {{personass[0]}}</span>
+                            <span class="">Id tipo de documento: {{personass[0]}}</span>
+                            <span class="">Documento: {{personass[0]}}</span>
+                            <span class="">Lugar de residencia: {{personass[0]}}</span>
+                            <span class="">Fecha de nacimiento: {{personass[0]}}</span>
+                            <span class="">Email: {{personass[0]}}</span>
+                            <span class="">Telefono: {{personass[0]}}</span>
+                            <span class="">Usuario: {{personass[0]}}</span>
+                            <span class="">Password: {{personass[0]}}</span>
+                            <br>
+                            <span class="">Id: {{personass[1]}}</span>
+                            <span class="">Nombres: {{personass[1]}}</span>
+                            <span class="">Apellidos: {{personass[1]}}</span>
+                            <span class="">Id tipo de documento: {{personass[1]}}</span>
+                            <span class="">Documento: {{personass[1]}}</span>
+                            <span class="">Lugar de residencia: {{personass[1]}}</span>
+                            <span class="">Fecha de nacimiento: {{personass[1]}}</span>
+                            <span class="">Email: {{personass[1]}}</span>
+                            <span class="">Telefono: {{personass[1]}}</span>
+                            <span class="">Usuario: {{personass[1]}}</span>
+                            <span class="">Password: {{personass[1]}}</span>
+
+                        </li>
+                        {% endfor %}
+                        <br> {% for ciudadess in list %}
+                        <li class="list-group-item">
+                            <span class="">Id: {{ciudadess[0]}}</span>
+                            <span class="">Nombre: {{ciudadess[0]}}</span>
+                            <span class="">Descripción: {{ciudadess[0]}}</span>
+                            <br>
+                            <span class="">Id: {{ciudadess[1]}}</span>
+                            <span class="">Nombre: {{ciudadess[1]}}</span>
+                            <span class="">Descripción: {{ciudadess[1]}}</span>
+                        </li>
+                        {% endfor %}
+                        <br> {% for tiposdocumentoss in list %}
+                        <li class="list-group-item">
+                            <span class="">Id: {{tiposdocumentoss[0]}}</span>
+                            <span class="">Nombre: {{tiposdocumentoss[0]}}</span>
+                            <span class="">Descripción: {{tiposdocumentoss[0]}}</span>
+                            <br>
+                            <span class="">Id: {{tiposdocumentoss[1]}}</span>
+                            <span class="">Nombre: {{tiposdocumentoss[1]}}</span>
+                            <span class="">Descripción: {{tiposdocumentoss[1]}}</span>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
